@@ -1,0 +1,110 @@
+/* Lab 01 - Flexbox navbar (Solution) */
+
+:root {
+  --bg: #0b1220;
+  --panel: rgba(18, 27, 47, 0.92);
+  --text: #e9eefc;
+  --muted: #aab6da;
+  --accent: #ff6a00;
+  --border: rgba(255,255,255,0.10);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: radial-gradient(1200px 800px at 10% 0%, #1a2a52, var(--bg));
+  color: var(--text);
+}
+
+.site-header {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0,0,0,0.18);
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap; /* mobile-friendly */
+}
+
+.logo {
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.nav a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  /* push actions to the right when there is space */
+  margin-left: auto;
+}
+
+.search {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+
+  /* Stretch: grow to fill remaining space */
+  flex: 1;
+  min-width: 180px;
+}
+
+.btn {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.btn:hover { background: rgba(255,255,255,0.10); }
+
+.btn.primary {
+  border-color: rgba(255, 106, 0, 0.35);
+  background: rgba(255, 106, 0, 0.20);
+}
+
+.btn.primary:hover { background: rgba(255, 106, 0, 0.30); }
+
+.content {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 900px) {
+  .site-header {
+    flex-wrap: nowrap;
+  }
+
+  .nav {
+    margin-left: 12px;
+  }
+}

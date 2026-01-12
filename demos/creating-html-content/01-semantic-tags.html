@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 01 - Semantic Mark-up Tags</title>
+</head>
+<body>
+  <header>
+    <h1>Semantic Mark-up Tags</h1>
+    <p>Using HTML5 semantic tags to describe the structure and purpose of content.</p>
+  </header>
+
+  <nav aria-label="Primary">
+    <a href="#article">Article</a> |
+    <a href="#aside">Aside</a> |
+    <a href="#footer">Footer</a>
+  </nav>
+
+  <main>
+    <article id="article">
+      <header>
+        <h2>Article header</h2>
+        <p>
+          This is an <code>&lt;article&gt;</code> with its own nested <code>&lt;header&gt;</code>.
+        </p>
+      </header>
+
+      <section>
+        <h3>Section</h3>
+        <p>
+          A <code>&lt;section&gt;</code> groups related content within an article.
+        </p>
+      </section>
+
+      <section>
+        <h3>Traditional elements still exist</h3>
+        <div>
+          <p>
+            You can still use a <code>&lt;div&gt;</code> where it makes sense, but prefer semantic tags
+            when the content has a clear meaning.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <p>Article footer: <time datetime="2026-01-12">12 Jan 2026</time></p>
+      </footer>
+    </article>
+
+    <aside id="aside">
+      <h2>Aside</h2>
+      <p>
+        <code>&lt;aside&gt;</code> contains supporting/secondary content (e.g. related links, glossary,
+        author bio).
+      </p>
+    </aside>
+  </main>
+
+  <footer id="footer">
+    <small>Demo 01</small>
+  </footer>
+</body>
+</html>

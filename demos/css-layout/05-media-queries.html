@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 05 - Media Queries (Mobile first)</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+  <style>
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr; /* mobile first */
+      gap: 12px;
+    }
+
+    @media (min-width: 700px) {
+      .cards { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (min-width: 1000px) {
+      .cards { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      padding: 12px;
+    }
+
+    .card h2 { margin-top: 0; color: var(--accent); font-size: 16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">Media Queries (mobile-first)</h1>
+      <p class="muted" style="margin: 8px 0 0;">Resize the window to see the grid change at breakpoints.</p>
+    </div>
+    <div class="badge">Demo 05</div>
+  </header>
+
+  <section class="panel">
+    <div class="cards">
+      <div class="card"><h2>Card 1</h2><p class="muted">1 column under 700px</p></div>
+      <div class="card"><h2>Card 2</h2><p class="muted">2 columns at 700px</p></div>
+      <div class="card"><h2>Card 3</h2><p class="muted">3 columns at 1000px</p></div>
+      <div class="card"><h2>Card 4</h2><p class="muted">Mobile-first grid</p></div>
+      <div class="card"><h2>Card 5</h2><p class="muted">Add more breakpoints as needed</p></div>
+      <div class="card"><h2>Card 6</h2><p class="muted">Prefer min-width queries</p></div>
+    </div>
+  </section>
+</body>
+</html>

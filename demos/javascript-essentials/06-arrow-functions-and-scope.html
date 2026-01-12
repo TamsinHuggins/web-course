@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 06 - Arrow functions and scope</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+</head>
+<body>
+  <h1>Arrow functions and scope</h1>
+  <pre id="out">Running...</pre>
+
+  <script>
+    const out = document.querySelector('#out');
+    const lines = [];
+
+    // Arrow function + array iteration
+    const nums = [1, 2, 3];
+    const doubled = nums.map(n => n * 2);
+    lines.push(`doubled = ${JSON.stringify(doubled)}`);
+
+    // Blocks: var vs let
+    function scopeDemo() {
+      if (true) {
+        var a = 'var is function-scoped';
+        let b = 'let is block-scoped';
+      }
+      return { a, b: typeof b };
+    }
+
+    const scope = scopeDemo();
+    lines.push(`scopeDemo: a='${scope.a}', typeof b='${scope.b}'`);
+
+    // Destructuring
+    const person = { name: 'Ada', role: 'Dev', address: { city: 'London' } };
+    const { name, address: { city } } = person;
+    lines.push(`destructure: name=${name}, city=${city}`);
+
+    // Spread syntax
+    const moreNums = [...nums, 4, 5];
+    lines.push(`spread array: ${JSON.stringify(moreNums)}`);
+
+    const person2 = { ...person, role: 'Senior Dev' };
+    lines.push(`spread object role: ${person2.role}`);
+
+    out.textContent = lines.join('\n');
+    console.log(lines.join('\n'));
+  </script>
+</body>
+</html>

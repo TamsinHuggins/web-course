@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab 01 - Selectors playground (Solution)</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header>
+    <h1 id="pageTitle">CSS Essentials: Selectors playground</h1>
+    <p class="intro">
+      Your job is to style this page using many different selector types.
+    </p>
+
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#topics">Topics</a>
+      <a href="https://example.com" target="_blank" rel="noreferrer">External link</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p class="highlight">This paragraph has a <code>.highlight</code> class.</p>
+      <p>This paragraph is normal.</p>
+      <p data-level="advanced">This paragraph has <code>data-level="advanced"</code>.</p>
+
+      <div class="callout" data-level="intro">
+        <h3>Callout</h3>
+        <p>
+          This <code>div</code> has <code>data-level</code> and a nested link:
+          <a href="/local">local link</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="topics">
+      <h2>Topics</h2>
+      <p>Below is a list you can target with combinators and position selectors.</p>
+
+      <ul class="topic-list">
+        <li><span class="tag">selectors</span> element, class, id</li>
+        <li><span class="tag">combinators</span> descendant / child / sibling</li>
+        <li><span class="tag">attributes</span> [data-*], starts-with, etc</li>
+        <li><span class="tag">pseudo</span> :hover, :focus, ::before</li>
+      </ul>
+
+      <form class="mini-form">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" />
+
+        <button class="btn" type="button">Normal</button>
+        <button class="btn primary" type="button">Primary</button>
+      </form>
+
+      <p class="muted">
+        Hint: try adding rules for <code>a:hover</code>, <code>h2 + p</code>,
+        <code>nav a</code>, <code>nav &gt; a</code>, and <code>[data-level]</code>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Lab 01</small>
+  </footer>
+</body>
+</html>

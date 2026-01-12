@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 04 - Loops</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+</head>
+<body>
+  <h1>Loops</h1>
+  <pre id="out">Running...</pre>
+
+  <script>
+    const out = document.querySelector('#out');
+
+    const lines = [];
+
+    // for
+    let sum = 0;
+    for (let i = 1; i <= 5; i++) {
+      sum += i;
+    }
+    lines.push(`for: sum 1..5 = ${sum}`);
+
+    // while
+    let n = 3;
+    while (n > 0) {
+      lines.push(`while: n=${n}`);
+      n--;
+    }
+
+    // do...while
+    let m = 0;
+    do {
+      lines.push(`do..while runs at least once (m=${m})`);
+      m++;
+    } while (m < 1);
+
+    // for...of (arrays)
+    const nums = [10, 20, 30];
+    for (const value of nums) {
+      lines.push(`for...of value=${value}`);
+    }
+
+    // for...in (object keys)
+    const person = { name: 'Ada', role: 'Dev' };
+    for (const key in person) {
+      lines.push(`for...in key=${key}, value=${person[key]}`);
+    }
+
+    // break/continue
+    for (let i = 0; i < 6; i++) {
+      if (i === 2) continue;
+      if (i === 5) break;
+      lines.push(`break/continue demo i=${i}`);
+    }
+
+    out.textContent = lines.join('\n');
+    console.log(lines.join('\n'));
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 04 - Attribute Selectors</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+  <style>
+    /* Attribute presence */
+    a[title] { color: var(--accent); }
+
+    /* Exact match */
+    a[data-kind="internal"] { text-decoration: underline; }
+
+    /* Starts with */
+    a[href^="https://"]::after { content: " (secure)"; color: var(--muted); font-weight: 400; }
+
+    /* Ends with */
+    a[href$=".pdf"]::after { content: " (pdf)"; color: var(--muted); }
+
+    /* Contains */
+    a[href*="example"] { border-bottom: 1px dashed rgba(255,255,255,0.25); }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">Attribute selectors</h1>
+      <p class="muted" style="margin: 8px 0 0;">Presence, exact match, starts/ends/contains.</p>
+    </div>
+    <div class="badge">Demo 04</div>
+  </header>
+
+  <section class="panel">
+    <ul style="margin:0; padding-left: 18px;">
+      <li><a href="/local" data-kind="internal" title="Internal link">Internal link</a></li>
+      <li><a href="https://example.com" title="External secure">External https link</a></li>
+      <li><a href="http://example.com">External http link</a></li>
+      <li><a href="https://files.example.com/guide.pdf" title="PDF guide">PDF guide</a></li>
+    </ul>
+  </section>
+</body>
+</html>

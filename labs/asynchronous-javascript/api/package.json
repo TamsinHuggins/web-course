@@ -1,0 +1,13 @@
+{
+  "name": "async-js-lab-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

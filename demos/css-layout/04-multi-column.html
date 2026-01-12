@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 04 - Multi-column Layout</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+  <style>
+    .columns {
+      column-width: 260px;
+      column-gap: 18px;
+      column-rule: 1px solid rgba(255,255,255,0.10);
+
+      /* optional: number of columns (browser chooses best) */
+      /* column-count: 3; */
+    }
+
+    .columns h2 {
+      break-after: avoid;
+      color: var(--accent);
+      margin-top: 0;
+    }
+
+    .columns .wide {
+      column-span: all;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 12px;
+      padding: 10px;
+      margin: 12px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">Multi-column layout</h1>
+      <p class="muted" style="margin: 8px 0 0;">Newspaper-style content flow across columns.</p>
+    </div>
+    <div class="badge">Demo 04</div>
+  </header>
+
+  <section class="panel columns">
+    <h2>Column flow</h2>
+    <p class="muted">
+      Multi-column layout flows text across columns. It is great for article-style content.
+    </p>
+    <p class="muted">Add more text to see how it flows. Add more text to see how it flows. Add more text to see how it flows.</p>
+    <p class="muted">Add more text to see how it flows. Add more text to see how it flows. Add more text to see how it flows.</p>
+
+    <div class="wide">
+      <strong>Span across columns:</strong> this block uses <code>column-span: all</code>.
+    </div>
+
+    <p class="muted">More flowing text. More flowing text. More flowing text. More flowing text. More flowing text.</p>
+    <p class="muted">More flowing text. More flowing text. More flowing text. More flowing text. More flowing text.</p>
+  </section>
+</body>
+</html>

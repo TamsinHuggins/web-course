@@ -1,0 +1,144 @@
+/*
+  Lab 01 - Selectors playground (Solution)
+
+  Selector: the part BEFORE { }, used to choose which elements a rule applies to.
+  Declaration block: the { ... } part containing one or more declarations.
+  Declaration: a single "property: value;" entry inside the block.
+*/
+
+/* Universal selector */
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 16px;
+  line-height: 1.5;
+}
+
+/* Element selector */
+p {
+  color: #222;
+}
+
+/* Class selectors */
+.intro { color: #444; }
+.muted { color: #666; }
+
+.highlight {
+  background: #fff3e8;
+  border-left: 4px solid #ff6a00;
+  padding: 10px 12px;
+}
+
+/* ID selector */
+#pageTitle {
+  margin-bottom: 6px;
+  color: #0b1220;
+}
+
+/* Relational selectors */
+nav a {
+  color: #0b5cff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover { text-decoration: underline; }
+
+/* child selector: only direct list items */
+ul.topic-list > li {
+  margin: 6px 0;
+}
+
+/* adjacent sibling: first paragraph after every h2 */
+h2 + p {
+  background: #f5f5f5;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+/* Attribute selectors */
+[data-level] {
+  outline: 2px solid rgba(255, 106, 0, 0.25);
+  outline-offset: 2px;
+}
+
+[data-level="advanced"] {
+  background: #f9f2ff;
+}
+
+a[href^="https://"]::after {
+  content: " (https)";
+  color: #666;
+  font-size: 12px;
+}
+
+/* Grouping selectors */
+h2, h3 {
+  color: #ff6a00;
+}
+
+/* Chaining selectors */
+button.btn.primary {
+  border: 1px solid #ff6a00;
+  background: #ff6a00;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 999px;
+}
+
+button.btn {
+  border: 1px solid #bbb;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+button.btn:hover {
+  background: #f3f3f3;
+}
+
+/* Pseudo-classes */
+a:visited { color: #7a35ff; }
+
+input:focus {
+  outline: 3px solid rgba(255, 106, 0, 0.35);
+}
+
+/* Position pseudo-class */
+ul.topic-list li:first-child {
+  font-weight: 800;
+}
+
+ul.topic-list li:nth-child(2) {
+  text-decoration: underline;
+}
+
+/* Pseudo-element */
+.tag::before {
+  content: "#";
+  color: #ff6a00;
+  font-weight: 800;
+}
+
+/* Small structural styling */
+.callout {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+}
+
+.mini-form {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+  max-width: 420px;
+}
+
+input {
+  padding: 8px 10px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+}

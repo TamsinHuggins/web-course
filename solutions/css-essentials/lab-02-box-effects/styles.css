@@ -1,0 +1,65 @@
+/* Lab 02 - Box & text effects (Solution) */
+
+:root {
+  --bg: #0b1220;
+  --text: #e9eefc;
+  --muted: #aab6da;
+  --panel: rgba(18, 27, 47, 0.92);
+  --accent: #ff6a00;
+  --border: rgba(255,255,255,0.10);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background: radial-gradient(1200px 800px at 10% 0%, #1a2a52, var(--bg));
+  color: var(--text);
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+  line-height: 1.5;
+}
+
+.muted { color: var(--muted); }
+
+.panel {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+}
+
+.card {
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(255,106,0,0.18), rgba(88,133,255,0.14));
+
+  /* radius + shadow */
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+
+  /* outline (drawn outside the border) */
+  outline: 3px solid rgba(255, 106, 0, 0.20);
+  outline-offset: 3px;
+}
+
+.overflow-box {
+  height: 80px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+
+  overflow: auto;
+  resize: both;
+}
+
+.fancy-text {
+  margin: 0;
+  text-indent: 14px;
+  word-spacing: 2px;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.60);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 02 - Custom Data Attributes</title>
+</head>
+<body>
+  <h1>Custom <code>data-*</code> attributes</h1>
+
+  <p>
+    HTML5 allows you to add custom attributes prefixed with <code>data-</code>.
+    JavaScript can read them via <code>element.dataset</code>.
+  </p>
+
+  <button id="btn" data-user-id="42" data-user-name="Ada" data-max-retries="3">
+    Click to read dataset
+  </button>
+
+  <pre id="out"></pre>
+
+  <script>
+    const btn = document.querySelector('#btn');
+    const out = document.querySelector('#out');
+
+    btn.addEventListener('click', () => {
+      // data-user-id      -> dataset.userId
+      // data-user-name    -> dataset.userName
+      // data-max-retries  -> dataset.maxRetries
+      const { userId, userName, maxRetries } = btn.dataset;
+
+      out.textContent = JSON.stringify(
+        { userId, userName, maxRetries, note: 'dataset values are always strings' },
+        null,
+        2
+      );
+    });
+  </script>
+</body>
+</html>

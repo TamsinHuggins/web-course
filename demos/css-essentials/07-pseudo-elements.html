@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 07 - Pseudo-elements</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+  <style>
+    p.lead::first-line {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    p.lead::first-letter {
+      font-size: 36px;
+      margin-right: 6px;
+    }
+
+    /* before/after with counters */
+    ol { counter-reset: step; }
+    ol li { counter-increment: step; }
+    ol li::before {
+      content: "Step " counter(step) ": ";
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .tag::after {
+      content: " •";
+      color: rgba(255,255,255,0.35);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">Pseudo-elements</h1>
+      <p class="muted" style="margin: 8px 0 0;">::first-line, ::first-letter, ::before, ::after (counters).</p>
+    </div>
+    <div class="badge">Demo 07</div>
+  </header>
+
+  <section class="panel">
+    <p class="lead">
+      Pseudo-elements target part of an element (e.g. first line/letter) or generate content
+      with <code>::before</code> and <code>::after</code>.
+    </p>
+
+    <h2 style="margin-top: 14px; color: var(--accent);">Counter example</h2>
+    <ol class="muted" style="margin: 0; padding-left: 18px;">
+      <li>Open DevTools</li>
+      <li>Inspect the generated content</li>
+      <li>Try changing the CSS</li>
+    </ol>
+
+    <p class="muted" style="margin: 14px 0 0;">
+      Tags: <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Selectors</span>
+    </p>
+  </section>
+</body>
+</html>

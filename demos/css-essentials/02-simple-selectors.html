@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo 02 - Simple Selectors</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+  <style>
+    /* Universal selector */
+    * { outline: 1px solid rgba(255,255,255,0.03); }
+
+    /* Element selector */
+    p { margin: 0 0 10px; }
+
+    /* Class selector */
+    .highlight { color: var(--accent); font-weight: 700; }
+
+    /* ID selector */
+    #only-one { text-decoration: underline; }
+
+    /* Combining selectors (element + class) */
+    p.highlight { background: rgba(255,106,0,0.10); padding: 8px 10px; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">Simple selectors</h1>
+      <p class="muted" style="margin: 8px 0 0;">Universal (*), element, class, id, and combining.</p>
+    </div>
+    <div class="badge">Demo 02</div>
+  </header>
+
+  <section class="panel">
+    <p>Plain paragraph (element selector targets <code>p</code>).</p>
+    <p class="highlight">Paragraph with <code>.highlight</code> (class selector).</p>
+    <p id="only-one">Paragraph with <code>#only-one</code> (id selector).</p>
+    <p class="highlight">This paragraph matches <code>p.highlight</code> (combined selector).</p>
+    <p class="muted" style="margin: 10px 0 0;">Inspect elements to see which rules apply.</p>
+  </section>
+</body>
+</html>
