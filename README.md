@@ -1,15 +1,16 @@
-# Web Course — Contents
+# Web Course
 
-Use this page as a starting point for labs.
+A hands-on introduction to web development. The course covers HTML, CSS, and JavaScript through a series of instructor-led demos and self-directed labs, progressing from static page structure through to consuming REST APIs asynchronously.
 
-## File Structure
+## Structure Overview
 
-```
-demos/          # Instructor-led demo files, organised by module
-labs/           # Starter files for hands-on exercises
-solutions/      # Completed reference solutions
-LAB-*.md        # Lab instructions, one file per module
-```
+Each module has three folders and a lab instructions file:
+
+| Folder | Contents |
+|--------|----------|
+| [`demos/`](./demos/) | Instructor-led demo files, organised by module |
+| [`labs/`](./labs/) | Starter files for hands-on exercises |
+| [`solutions/`](./solutions/) | Completed reference solutions |
 
 ## Lab Instructions
 
@@ -18,9 +19,3 @@ LAB-*.md        # Lab instructions, one file per module
 - [`LAB-3-CSS-Layout.md`](./LAB-3-CSS-Layout.md)
 - [`LAB-4-JavaScript-Essentials.md`](./LAB-4-JavaScript-Essentials.md)
 - [`LAB-5-Asynchronous-JavaScript.md`](./LAB-5-Asynchronous-JavaScript.md)
-
-## Quick links
-
-- [`demos/`](./demos/)
-- [`labs/`](./labs/)
-- [`solutions/`](./solutions/)
