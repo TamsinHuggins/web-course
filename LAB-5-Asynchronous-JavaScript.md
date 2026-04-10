@@ -1,4 +1,4 @@
-# LAB — Asynchronous JavaScript (Fetch + REST APIs)
+# LAB: Asynchronous JavaScript (Fetch + REST APIs)
 
 **Module goal:** understand asynchronous JavaScript using **callbacks**, **promises**, and **async/await**, then apply it to calling a REST API.
 
@@ -12,7 +12,7 @@
 ## Setup (API server)
 A small practice API is included in this module.
 
-1. Open a terminal in `labs/asynchronous-javascript/api/`
+1. Open a terminal in `labs/5-asynchronous-javascript/api/`
 2. Install dependencies:
    - `npm install`
 3. Start the server:
@@ -25,8 +25,8 @@ Verify in a browser:
 
 ---
 
-## Lab 01 — Callbacks + Promises (no REST)
-**Folder:** `labs/asynchronous-javascript/lab-01-callbacks-promises/`
+## Lab 501 — Callbacks + Promises (no REST)
+**Folder:** `labs/5-asynchronous-javascript/lab-501-callbacks-promises/`
 
 ### Your tasks
 Open `index.html` and complete the TODOs in `async-basics.js`.
@@ -46,8 +46,8 @@ You will implement:
 
 ---
 
-## Lab 02 — Fetch + REST API (GET + POST)
-**Folder:** `labs/asynchronous-javascript/lab-02-fetch-rest/`
+## Lab 502 — Fetch + REST API (GET + POST)
+**Folder:** `labs/5-asynchronous-javascript/lab-502-fetch-rest/`
 
 ### Your tasks
 You’ll build a *basic* web client (GET + POST only) against the provided API.
@@ -69,8 +69,8 @@ Open `index.html` and complete the TODOs in `client.js`:
 
 ---
 
-## Lab 03 — Fetch + REST API (Full CRUD)
-**Folder:** `labs/asynchronous-javascript/lab-03-crud-rest/`
+## Lab 503 — Fetch + REST API (Full CRUD)
+**Folder:** `labs/5-asynchronous-javascript/lab-503-crud-rest/`
 
 ### Your tasks
 You’ll implement GET/POST/PUT/DELETE and basic UI state.

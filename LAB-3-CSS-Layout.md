@@ -1,4 +1,4 @@
-# Lab: CSS Layout (Module 4)
+# Lab: CSS Layout
 
 Duration: ~60–75 minutes (+ optional stretch)
 
@@ -14,17 +14,17 @@ Legacy techniques (float/multi-column/absolute positioning) are referenced for a
 
 ## Setup
 Work in these folders:
-- `labs/css-layout/lab-01-flexbox-navbar/`
-- `labs/css-layout/lab-02-grid-cards/`
-- `labs/css-layout/lab-03-responsive-page/`
+- `labs/3-css-layout/lab-301-flexbox-navbar/`
+- `labs/3-css-layout/lab-302-grid-cards/`
+- `labs/3-css-layout/lab-303-responsive-page/`
 
 Open each `index.html` in a browser.
 
 ---
 
-## Lab 01 — Flexbox navbar (modern)
+## Lab 301 — Flexbox navbar (modern)
 
-**Folder:** `labs/css-layout/lab-01-flexbox-navbar/`
+**Folder:** `labs/3-css-layout/lab-301-flexbox-navbar/`
 
 ### Requirements
 1. Turn the header into a responsive navbar using **Flexbox**:
@@ -47,9 +47,9 @@ Open each `index.html` in a browser.
 
 ---
 
-## Lab 02 — Responsive card grid (CSS Grid)
+## Lab 302 — Responsive card grid (CSS Grid)
 
-**Folder:** `labs/css-layout/lab-02-grid-cards/`
+**Folder:** `labs/3-css-layout/lab-302-grid-cards/`
 
 ### Requirements
 1. Build a responsive card grid using **CSS Grid**.
@@ -64,9 +64,9 @@ Open each `index.html` in a browser.
 
 ---
 
-## Lab 03 — Responsive page layout (Grid + media queries)
+## Lab 303 — Responsive page layout (Grid + media queries)
 
-**Folder:** `labs/css-layout/lab-03-responsive-page/`
+**Folder:** `labs/3-css-layout/lab-303-responsive-page/`
 
 ### Requirements
 1. Use **Grid** to create a common page layout:
@@ -86,6 +86,6 @@ Open each `index.html` in a browser.
 ---
 
 ## Solutions
-- `solutions/css-layout/lab-01-flexbox-navbar/`
-- `solutions/css-layout/lab-02-grid-cards/`
-- `solutions/css-layout/lab-03-responsive-page/`
+- `solutions/3-css-layout/solution-301-flexbox-navbar/`
+- `solutions/3-css-layout/solution-302-grid-cards/`
+- `solutions/3-css-layout/solution-303-responsive-page/`

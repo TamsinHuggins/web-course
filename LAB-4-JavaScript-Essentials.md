@@ -1,4 +1,4 @@
-# LAB — JavaScript Essentials
+# LAB: JavaScript Essentials
 
 **Module goal:** get comfortable with core JavaScript syntax and problem solving before we start heavy DOM work and async.
 
@@ -17,8 +17,8 @@
 
 ---
 
-## Lab 01 — JS Basics: small utilities
-**Folder:** `labs/javascript-essentials/lab-01-js-basics/`
+## Lab 401 — JS Basics: small utilities
+**Folder:** `labs/4-javascript-essentials/lab-401-js-basics/`
 
 ### Your tasks
 Open `index.html` and implement the TODOs in `script.js`.
@@ -35,8 +35,8 @@ You will implement:
 
 ---
 
-## Lab 02 — Functions + Arrays: process data
-**Folder:** `labs/javascript-essentials/lab-02-functions-and-arrays/`
+## Lab 402 — Functions + Arrays: process data
+**Folder:** `labs/4-javascript-essentials/lab-402-functions-and-arrays/`
 
 ### Your tasks
 Open `index.html` and implement the TODOs in `app.js`.
@@ -52,8 +52,8 @@ You will implement:
 
 ---
 
-## Lab 03 — Intro DOM + Events: a simple counter
-**Folder:** `labs/javascript-essentials/lab-03-dom-events/`
+## Lab 403 — Intro DOM + Events: a simple counter
+**Folder:** `labs/4-javascript-essentials/lab-403-dom-events/`
 
 ### Your tasks
 This lab is intentionally small: you will wire up click handlers and update text in the DOM.

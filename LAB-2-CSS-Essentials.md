@@ -1,4 +1,4 @@
-# Lab: CSS Essentials (Module 3)
+# Lab: CSS Essentials
 
 Duration: ~45–60 minutes (+ optional stretch)
 
@@ -16,14 +16,14 @@ Apply CSS to a provided HTML page to practise:
 
 ## Setup
 Work in:
-- `labs/css-essentials/lab-01-selectors/index.html`
-- `labs/css-essentials/lab-01-selectors/styles.css`
+- `labs/2-css-essentials/lab-201-selectors/index.html`
+- `labs/2-css-essentials/lab-201-selectors/styles.css`
 
 Open `index.html` in a browser and refresh as you make changes.
 
 ---
 
-## Lab 01 — Selectors playground
+## Lab 201 — Selectors playground
 
 ### Part A — Warm-up (terminology)
 1. Open `styles.css`.
@@ -63,11 +63,11 @@ Add rules that:
 
 ---
 
-## Lab 02 — Box + text effects
+## Lab 202 — Box + text effects
 
 Work in:
-- `labs/css-essentials/lab-02-box-effects/index.html`
-- `labs/css-essentials/lab-02-box-effects/styles.css`
+- `labs/2-css-essentials/lab-202-box-effects/index.html`
+- `labs/2-css-essentials/lab-202-box-effects/styles.css`
 
 ### Requirements
 1. Add rounded corners to the card using `border-radius`.
@@ -88,5 +88,5 @@ Work in:
 ---
 
 ## Solutions
-- `solutions/css-essentials/lab-01-selectors/`
-- `solutions/css-essentials/lab-02-box-effects/`
+- `solutions/2-css-essentials/solution-201-selectors/`
+- `solutions/2-css-essentials/solution-202-box-effects/`

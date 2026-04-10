@@ -1,4 +1,4 @@
-# Lab: Creating HTML Content (Module 2)
+# Lab: Creating HTML Content (Module 1)
 
 Duration: ~30 minutes (+ optional stretch)
 
@@ -15,7 +15,7 @@ Create a single HTML5 page that demonstrates:
 
 ## Setup
 Work in:
-- `labs/creating-html-content/index.html`
+- `labs/1-creating-html-content/index.html`
 
 Open the file in a browser as you go.
 
@@ -105,4 +105,4 @@ You’re done when:
 ---
 
 ## Solution
-See: `solutions/creating-html-content/index.html`
+See: `solutions/1-creating-html-content/index.html`
