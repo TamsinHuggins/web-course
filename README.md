@@ -1,39 +1,38 @@
 # Web Course — Contents
 
-Use this page as a starting point for all modules.
 
-## 1 — Creating HTML Content
-- Instructions: [`LAB-Creating-HTML-Content.md`](./LAB-Creating-HTML-Content.md)
-- Demos: [`demos/1-creating-html-content/`](./demos/1-creating-html-content/)
-- Labs: [`labs/1-creating-html-content/`](./labs/1-creating-html-content/)
-- Solutions: [`solutions/1-creating-html-content/`](./solutions/1-creating-html-content/)
+Use this page as a starting point for labs.
 
-## 2 — CSS Essentials
-- Instructions: [`LAB-CSS-Essentials.md`](./LAB-CSS-Essentials.md)
-- Demos: [`demos/2-css-essentials/`](./demos/2-css-essentials/)
-- Labs: [`labs/2-css-essentials/`](./labs/2-css-essentials/)
-- Solutions: [`solutions/2-css-essentials/`](./solutions/2-css-essentials/)
+## File Structure
 
-## 3 — CSS Layout
-- Instructions: [`LAB-CSS-Layout.md`](./LAB-CSS-Layout.md)
-- Demos: [`demos/3-css-layout/`](./demos/3-css-layout/)
-- Labs: [`labs/3-css-layout/`](./labs/3-css-layout/)
-- Solutions: [`solutions/3-css-layout/`](./solutions/3-css-layout/)
+```
+demos/          # Instructor-led demo files, organised by module
+labs/           # Starter files for hands-on exercises
+solutions/      # Completed reference solutions
+LAB-*.md        # Lab instructions, one file per module
+```
 
-## 4 — JavaScript Essentials
-- Instructions: [`LAB-JavaScript-Essentials.md`](./LAB-JavaScript-Essentials.md)
-- Demos: [`demos/4-javascript-essentials/`](./demos/4-javascript-essentials/)
-- Labs: [`labs/4-javascript-essentials/`](./labs/4-javascript-essentials/)
-- Solutions: [`solutions/4-javascript-essentials/`](./solutions/4-javascript-essentials/)
+## Lab Instructions
 
-## 5 — Asynchronous JavaScript (Fetch + REST APIs)
-- Instructions: [`LAB-Asynchronous-JavaScript.md`](./LAB-Asynchronous-JavaScript.md)
-- Demos: [`demos/5-asynchronous-javascript/`](./demos/5-asynchronous-javascript/)
-- Labs: [`labs/5-asynchronous-javascript/`](./labs/5-asynchronous-javascript/)
-  - API server: [`labs/5-asynchronous-javascript/api/`](./labs/5-asynchronous-javascript/api/)
-- Solutions: [`solutions/5-asynchronous-javascript/`](./solutions/5-asynchronous-javascript/)
+### 1 — Creating HTML Content
+- Instructions: [`LAB-1-Creating-HTML-Content.md`](./LAB-1-Creating-HTML-Content.md)
 
-## Quick links (by type)
+### 2 — CSS Essentials
+- Instructions: [`LAB-2-CSS-Essentials.md`](./LAB-2-CSS-Essentials.md)
+
+### 3 — CSS Layout
+- Instructions: [`LAB-3-CSS-Layout.md`](./LAB-3-CSS-Layout.md)
+
+
+### 4 — JavaScript Essentials
+- Instructions: [`LAB-4-JavaScript-Essentials.md`](./LAB-4-JavaScript-Essentials.md)
+
+
+### 5 — Asynchronous JavaScript (Fetch + REST APIs)
+- Instructions: [`LAB-5-Asynchronous-JavaScript.md`](./LAB-5-Asynchronous-JavaScript.md)
+
+
+### Quick links (by type)
 - All demos: [`demos/`](./demos/)
 - All labs: [`labs/`](./labs/)
 - All solutions: [`solutions/`](./solutions/)
