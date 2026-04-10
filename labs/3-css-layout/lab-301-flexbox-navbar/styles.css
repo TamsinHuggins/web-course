@@ -1,0 +1,84 @@
+/* Flexbox navbar (starter)
+
+   TODO:
+   - Use display:flex on .site-header
+   - Align items and add spacing
+   - Make it responsive (mobile-first)
+*/
+
+:root {
+  --bg: #0b1220;
+  --panel: rgba(18, 27, 47, 0.92);
+  --text: #e9eefc;
+  --muted: #aab6da;
+  --accent: #ff6a00;
+  --border: rgba(255,255,255,0.10);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: radial-gradient(1200px 800px at 10% 0%, #1a2a52, var(--bg));
+  color: var(--text);
+}
+
+.site-header {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0,0,0,0.18);
+
+  /* TODO: flexbox layout */
+}
+
+.logo {
+  font-weight: 900;
+  letter-spacing: 0.5px;
+}
+
+.nav a {
+  color: var(--text);
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.actions {
+  /* TODO: flexbox layout */
+}
+
+.search {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+
+  /* Stretch: make search grow */
+}
+
+.btn {
+  font: inherit;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.btn.primary {
+  border-color: rgba(255, 106, 0, 0.35);
+  background: rgba(255, 106, 0, 0.20);
+}
+
+.content {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 900px) {
+  /* TODO: desktop layout tweaks */
+}
