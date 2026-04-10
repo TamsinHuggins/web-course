@@ -4,39 +4,38 @@ Use this page as a starting point for all modules.
 
 ## Module 1 — Getting Started with HTML/CSS/JS
 - Instructions: [`LAB-Getting-Started.md`](./LAB-Getting-Started.md)
-- Demos: [`demos/getting-started/`](./demos/getting-started/)
+- Demos: [`demos/0-getting-started/`](./demos/0-getting-started/)
 
 ## Module 2 — Creating HTML Content
 - Instructions: [`LAB-Creating-HTML-Content.md`](./LAB-Creating-HTML-Content.md)
-- Demos: [`demos/creating-html-content/`](./demos/creating-html-content/)
-- Labs: [`labs/creating-html-content/`](./labs/creating-html-content/)
-- Solutions: [`solutions/creating-html-content/`](./solutions/creating-html-content/)
+- Demos: [`demos/1-creating-html-content/`](./demos/1-creating-html-content/)
+- Labs: [`labs/1-creating-html-content/`](./labs/1-creating-html-content/)
+- Solutions: [`solutions/1-creating-html-content/`](./solutions/1-creating-html-content/)
 
 ## Module 3 — CSS Essentials
 - Instructions: [`LAB-CSS-Essentials.md`](./LAB-CSS-Essentials.md)
-- Demos: [`demos/css-essentials/`](./demos/css-essentials/)
-- Labs: [`labs/css-essentials/`](./labs/css-essentials/)
-- Solutions: [`solutions/css-essentials/`](./solutions/css-essentials/)
+- Demos: [`demos/2-css-essentials/`](./demos/2-css-essentials/)
+- Labs: [`labs/2-css-essentials/`](./labs/2-css-essentials/)
+- Solutions: [`solutions/2-css-essentials/`](./solutions/2-css-essentials/)
 
 ## Module 4 — CSS Layout
 - Instructions: [`LAB-CSS-Layout.md`](./LAB-CSS-Layout.md)
-- Demos: [`demos/css-layout/`](./demos/css-layout/)
-- Labs: [`labs/css-layout/`](./labs/css-layout/)
-- Solutions: [`solutions/css-layout/`](./solutions/css-layout/)
+- Demos: [`demos/3-css-layout/`](./demos/3-css-layout/)
+- Labs: [`labs/3-css-layout/`](./labs/3-css-layout/)
+- Solutions: [`solutions/3-css-layout/`](./solutions/3-css-layout/)
 
 ## Module 5 — JavaScript Essentials
 - Instructions: [`LAB-JavaScript-Essentials.md`](./LAB-JavaScript-Essentials.md)
-- Demos: [`demos/javascript-essentials/`](./demos/javascript-essentials/)
-- Labs: [`labs/javascript-essentials/`](./labs/javascript-essentials/)
-- Solutions: [`solutions/javascript-essentials/`](./solutions/javascript-essentials/)
+- Demos: [`demos/4-javascript-essentials/`](./demos/4-javascript-essentials/)
+- Labs: [`labs/4-javascript-essentials/`](./labs/4-javascript-essentials/)
+- Solutions: [`solutions/4-javascript-essentials/`](./solutions/4-javascript-essentials/)
 
 ## Module 6 — Asynchronous JavaScript (Fetch + REST APIs)
 - Instructions: [`LAB-Asynchronous-JavaScript.md`](./LAB-Asynchronous-JavaScript.md)
-- Demos:
-  - REST API demo: [`demos/restapis/`](./demos/restapis/)
-- Labs: [`labs/asynchronous-javascript/`](./labs/asynchronous-javascript/)
-  - API server: [`labs/asynchronous-javascript/api/`](./labs/asynchronous-javascript/api/)
-- Solutions: [`solutions/asynchronous-javascript/`](./solutions/asynchronous-javascript/)
+- Demos: [`demos/5-asynchronous-javascript/`](./demos/5-asynchronous-javascript/)
+- Labs: [`labs/5-asynchronous-javascript/`](./labs/5-asynchronous-javascript/)
+  - API server: [`labs/5-asynchronous-javascript/api/`](./labs/5-asynchronous-javascript/api/)
+- Solutions: [`solutions/5-asynchronous-javascript/`](./solutions/5-asynchronous-javascript/)
 
 ## Quick links (by type)
 - All demos: [`demos/`](./demos/)
