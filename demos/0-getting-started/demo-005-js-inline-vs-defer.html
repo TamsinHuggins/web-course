@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript and Deferred Execution</title>
+  <link rel="stylesheet" href="./styles.css" />
+
+  <script>
+    // This runs as the browser parses the <head>
+    console.log('Head script: document.body is', document.body);
+
+    function sayHello() {
+      alert('Hello from a function in the <head>');
+    }
+  </script>
+
+  <!-- Deferred script executes after HTML parsing is complete -->
+  <script defer src="./05-js-inline-vs-defer.js"></script>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin: 0;">JavaScript loading</h1>
+      <p class="muted" style="margin: 8px 0 0;">Functions in <code>&lt;head&gt;</code> + <code>defer</code> scripts.</p>
+    </div>
+    <div class="badge">Demo 05</div>
+  </header>
+
+  <section class="panel">
+    <p class="muted">Open DevTools Console and refresh to see the log order.</p>
+
+    <div class="row">
+      <div>
+        <button id="btnDefer" type="button">Click (wired by deferred JS)</button>
+        <div id="status" class="muted" style="margin-top: 10px;">Status: waiting...</div>
+      </div>
+      <div>
+        <button type="button" onclick="sayHello()">Click (calls function defined in head)</button>
+        <div class="muted" style="margin-top: 10px;">This uses an inline event handler.</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Terminology</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+
+  <!--
+    STYLE RULE = selector + declaration block
+    DECLARATION BLOCK = { property: value; property: value; }
+    DECLARATION = property: value;
+  -->
+  <style>
+    /* Selector: element selector (h2) */
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+    }
+
+    /* Selector: class selector (.note) */
+    .note {
+      border-left: 4px solid rgba(255, 106, 0, 0.6);
+      padding-left: 12px;
+    }
+
+    /* Selector: id selector (#special) */
+    #special {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">CSS terminology</h1>
+      <p class="muted" style="margin: 8px 0 0;">Style rules, selectors, declaration blocks, and declarations.</p>
+    </div>
+    <div class="badge">Demo 01</div>
+  </header>
+
+  <section class="grid">
+    <div class="panel">
+      <h2>Style rule</h2>
+      <p class="muted">
+        A style rule is a <strong>selector</strong> plus a <strong>declaration block</strong>.
+      </p>
+      <pre class="muted" style="margin:0; white-space: pre-wrap;">h2 { color: orange; }</pre>
+    </div>
+
+    <div class="panel">
+      <h2>Declarations</h2>
+      <p class="muted">
+        Declarations live inside <code>{ }</code> and end in <code>;</code>. Each is a property/value pair.
+      </p>
+      <pre class="muted" style="margin:0; white-space: pre-wrap;">.note {
+  border-left: 4px solid orange;
+  padding-left: 12px;
+}</pre>
+    </div>
+
+    <div class="panel note">
+      <h2 id="special">Selectors</h2>
+      <ul class="muted" style="margin:0; padding-left: 18px;">
+        <li>Element selector: <code>h2</code></li>
+        <li>Class selector: <code>.note</code></li>
+        <li>ID selector: <code>#special</code></li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Tip</h2>
+      <p class="muted" style="margin:0;">Right-click → Inspect to see which rules apply in DevTools.</p>
+    </div>
+  </section>
+</body>
+</html>

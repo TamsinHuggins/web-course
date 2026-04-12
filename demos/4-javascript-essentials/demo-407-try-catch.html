@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>try/catch</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+</head>
+<body>
+  <h1>try / catch / finally</h1>
+  <pre id="out">Running...</pre>
+
+  <script>
+    const out = document.querySelector('#out');
+    const lines = [];
+
+    function mightFail(x) {
+      if (x < 0) {
+        throw new Error('x must be >= 0');
+      }
+      return Math.sqrt(x);
+    }
+
+    try {
+      lines.push(`sqrt(9) = ${mightFail(9)}`);
+      lines.push(`sqrt(-1) = ${mightFail(-1)}`);
+    } catch (err) {
+      lines.push(`Caught: ${err.message}`);
+    } finally {
+      lines.push('Finally: cleanup would go here');
+    }
+
+    out.textContent = lines.join('\n');
+    console.log(lines.join('\n'));
+  </script>
+</body>
+</html>

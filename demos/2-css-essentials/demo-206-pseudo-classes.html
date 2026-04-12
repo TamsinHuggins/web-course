@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pseudo-classes</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+  <style>
+    /* Link pseudo-classes (order matters) */
+    a:link { color: #9cc0ff; }
+    a:visited { color: #c4a8ff; }
+    a:hover { color: var(--accent); }
+    a:active { color: #ffb26b; }
+
+    input:focus {
+      outline: 3px solid rgba(255, 106, 0, 0.35);
+      border-radius: 10px;
+    }
+
+    li:first-child { font-weight: 800; }
+    li:nth-child(2) { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">Pseudo-classes</h1>
+      <p class="muted" style="margin: 8px 0 0;">Link states, :focus, :first-child, :nth-child.</p>
+    </div>
+    <div class="badge">Demo 06</div>
+  </header>
+
+  <section class="panel">
+    <h2 style="margin-top:0; color: var(--accent);">Links</h2>
+    <p class="muted">Hover/active states work immediately; visited depends on your browser history.</p>
+    <p>
+      <a href="https://example.com">Example.com</a> |
+      <a href="https://www.wikipedia.org">Wikipedia</a>
+    </p>
+
+    <h2 style="color: var(--accent);">Focus</h2>
+    <label class="muted" for="name">Click into the input to see <code>:focus</code></label>
+    <div style="margin-top: 8px; max-width: 420px;">
+      <input id="name" type="text" placeholder="Focus me" style="width:100%; padding: 10px 12px;" />
+    </div>
+
+    <h2 style="color: var(--accent);">Position</h2>
+    <ul class="muted" style="margin: 8px 0 0; padding-left: 18px;">
+      <li>first-child</li>
+      <li>nth-child(2)</li>
+      <li>normal</li>
+    </ul>
+  </section>
+</body>
+</html>

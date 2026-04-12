@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chaining and Grouping</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+  <style>
+    /* Grouping: same declarations apply to multiple selectors */
+    h2, h3 { color: var(--accent); margin-top: 0; }
+
+    /* Chaining: all conditions must be true */
+    button.primary.rounded {
+      border: 1px solid rgba(255, 106, 0, 0.4);
+      background: rgba(255, 106, 0, 0.18);
+      padding: 10px 12px;
+      border-radius: 999px;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    button.primary.rounded:hover {
+      background: rgba(255, 106, 0, 0.28);
+    }
+
+    /* Not chained (just a class selector) */
+    .primary { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">Chaining vs grouping</h1>
+      <p class="muted" style="margin: 8px 0 0;">Chaining narrows selection. Grouping reuses declarations.</p>
+    </div>
+    <div class="badge">Demo 05</div>
+  </header>
+
+  <section class="grid">
+    <div class="panel">
+      <h2>Grouping</h2>
+      <p class="muted">This rule groups selectors:</p>
+      <pre class="muted" style="margin:0; white-space: pre-wrap;">h2, h3 { color: orange; }</pre>
+    </div>
+
+    <div class="panel">
+      <h2>Chaining</h2>
+      <p class="muted">This matches only a <code>&lt;button&gt;</code> with both classes:</p>
+      <pre class="muted" style="margin:0; white-space: pre-wrap;">button.primary.rounded { ... }</pre>
+      <div style="margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap;">
+        <button class="primary rounded" type="button">Primary rounded</button>
+        <button class="primary" type="button">Primary (not rounded)</button>
+        <button class="rounded" type="button">Rounded (not primary)</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

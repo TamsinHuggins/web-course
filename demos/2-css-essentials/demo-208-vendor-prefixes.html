@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vendor Prefixes</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+  <style>
+    .box {
+      width: 260px;
+      padding: 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.06);
+
+      /* Example of historical vendor prefix usage */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">Vendor prefixes</h1>
+      <p class="muted" style="margin: 8px 0 0;">Why they exist and what they look like.</p>
+    </div>
+    <div class="badge">Demo 08</div>
+  </header>
+
+  <section class="panel">
+    <p class="muted">
+      Vendor prefixes appear when browsers ship partial support for emerging features.
+      In modern workflows you often rely on tooling (e.g. Autoprefixer) rather than writing these by hand.
+    </p>
+
+    <div class="box">
+      Try selecting this text. The rule uses prefixed and unprefixed <code>user-select</code>.
+    </div>
+  </section>
+</body>
+</html>

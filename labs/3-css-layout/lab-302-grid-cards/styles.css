@@ -1,0 +1,47 @@
+/* Grid cards (starter)
+
+  TODO:
+  - Use display:grid on .grid
+  - Use repeat(auto-fit, minmax(...)) for responsive columns
+  - Add gap
+  - Style .card
+  - Stretch: make .featured span 2 columns on desktop
+*/
+
+:root {
+  --bg: #0b1220;
+  --text: #e9eefc;
+  --muted: #aab6da;
+  --accent: #ff6a00;
+  --border: rgba(255,255,255,0.10);
+  --panel: rgba(18, 27, 47, 0.92);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background: radial-gradient(1200px 800px at 10% 0%, #1a2a52, var(--bg));
+  color: var(--text);
+}
+
+.page {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.muted { color: var(--muted); }
+
+.grid {
+  /* TODO: grid layout */
+}
+
+.card {
+  /* TODO: card styling */
+}
+
+.featured {
+  /* Stretch: grid-column: span 2; (only on large screens) */
+}

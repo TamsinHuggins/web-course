@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Backgrounds, Borders, Colours and Text</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+  <style>
+    .demo {
+      background: linear-gradient(135deg, rgba(255,106,0,0.25), rgba(88,133,255,0.18));
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 16px;
+      padding: 14px;
+
+      outline: 3px solid rgba(255, 106, 0, 0.25);
+      outline-offset: 3px;
+
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    }
+
+    .overflow {
+      width: 100%;
+      max-width: 520px;
+      height: 80px;
+      overflow: auto;
+      resize: both;
+      padding: 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .opacity {
+      background: rgba(255, 106, 0, 0.25);
+      padding: 10px;
+      border-radius: 12px;
+      opacity: 0.85;
+    }
+
+    .text {
+      text-indent: 12px;
+      word-spacing: 2px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.55);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">Backgrounds, borders, colours and text</h1>
+      <p class="muted" style="margin: 8px 0 0;">Outline, overflow, radius, shadow, opacity, text styling.</p>
+    </div>
+    <div class="badge">Demo 09</div>
+  </header>
+
+  <section class="panel">
+    <div class="demo">
+      <p class="muted" style="margin: 0;">This box demonstrates background gradients, borders, radius, outline and box-shadow.</p>
+    </div>
+
+    <h2 style="margin-top: 16px; color: var(--accent);">Overflow + resize</h2>
+    <div class="overflow muted">
+      This box has <code>overflow: auto</code> and <code>resize: both</code>. Try dragging the handle to resize it.
+      Add more text... Add more text... Add more text... Add more text... Add more text...
+    </div>
+
+    <h2 style="margin-top: 16px; color: var(--accent);">Opacity + text</h2>
+    <div class="opacity">
+      <p class="text" style="margin:0;">
+        A little text styling: <code>text-indent</code>, <code>word-spacing</code>, and <code>text-shadow</code>.
+      </p>
+    </div>
+  </section>
+</body>
+</html>

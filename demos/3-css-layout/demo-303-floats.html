@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Floats (Legacy)</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+  <style>
+    .thumb {
+      float: left;
+      width: 110px;
+      height: 110px;
+      margin: 0 12px 10px 0;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: linear-gradient(135deg, rgba(255,106,0,0.25), rgba(88,133,255,0.18));
+    }
+
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">Floats (legacy technique)</h1>
+      <p class="muted" style="margin: 8px 0 0;">Float + clear. Useful history; modern layout uses flex/grid.</p>
+    </div>
+    <div class="badge">Demo 03</div>
+  </header>
+
+  <section class="panel">
+    <div class="thumb" aria-label="Thumbnail"></div>
+    <p class="muted">
+      The thumbnail is floated left. Text wraps around it. Historically used for column layouts, but today
+      prefer <code>flex</code> or <code>grid</code>.
+    </p>
+    <p class="muted">
+      This paragraph will continue wrapping until something clears the float.
+    </p>
+
+    <p class="muted clear" style="margin-bottom:0;">
+      This paragraph uses <code>clear: both</code> so it starts below the float.
+    </p>
+  </section>
+</body>
+</html>

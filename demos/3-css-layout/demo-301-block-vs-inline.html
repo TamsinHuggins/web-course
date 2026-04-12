@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Block vs Inline</title>
+  <link rel="stylesheet" href="./_demo-shared.css" />
+  <style>
+    .example {
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      padding: 12px;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .label { color: var(--muted); font-size: 12px; }
+
+    .box {
+      background: rgba(255, 106, 0, 0.18);
+      border: 1px solid rgba(255, 106, 0, 0.35);
+      padding: 8px 10px;
+      border-radius: 10px;
+    }
+
+    /* Changing display */
+    .inline-now { display: inline; }
+    .block-now { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1 style="margin:0;">Block vs inline</h1>
+      <p class="muted" style="margin: 8px 0 0;">Block elements take full width; inline elements take content width.</p>
+    </div>
+    <div class="badge">Demo 01</div>
+  </header>
+
+  <section class="grid2">
+    <div class="panel">
+      <h2 style="margin-top:0; color: var(--accent);">Block elements</h2>
+      <div class="example">
+        <div class="label">Each box is a <code>&lt;div&gt;</code> (block)</div>
+        <div class="box">Block 1</div>
+        <div class="box" style="margin-top: 10px;">Block 2</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2 style="margin-top:0; color: var(--accent);">Inline elements</h2>
+      <div class="example">
+        <div class="label">Each box is a <code>&lt;span&gt;</code> (inline)</div>
+        <span class="box">Inline A</span>
+        <span class="box">Inline B</span>
+        <span class="box">Inline C</span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2 style="margin-top:0; color: var(--accent);">Making block inline</h2>
+      <div class="example">
+        <div class="label"><code>display: inline</code> on a <code>&lt;div&gt;</code></div>
+        <div class="box inline-now">I am a div but inline</div>
+        <div class="box inline-now">So am I</div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2 style="margin-top:0; color: var(--accent);">Making inline block</h2>
+      <div class="example">
+        <div class="label"><code>display: block</code> on a <code>&lt;span&gt;</code></div>
+        <span class="box block-now">I am a span but block</span>
+        <span class="box block-now" style="margin-top: 10px;">So am I</span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
